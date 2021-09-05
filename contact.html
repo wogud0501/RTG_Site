@@ -1,38 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>RTG 공식 지원 양식</title>
+    <title>RTG 공식 연락 형식</title>
     <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
     <script type="text/javascript">
-       (function(){
+         (function(){
+            // emailJS 유저 ID
            emailjs.init("user_biWKlbbM6ODmQZGhVnhbr");
-        })()
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-
-                emailjs.sendForm('service_qgsxq4a', 'template_s5r6h1l', this);
-            });
-        }
-    </script>
-</head>
-<body>
-    <form id="contact-form">
-        <input type="hidden" name="contact_number">
-        
-        <label>Name</label>
-        <input type="text" name="to_name">
-        
-        <lable>From Name</lable>
-        <input type="text" name="from_name">
-        
-        <label>Message</label>
-        <textarea name="contact"></textarea>
-        
-        <input type="submit" value="Send>"
-    </form>
-</body>
-</html>
+        })();
