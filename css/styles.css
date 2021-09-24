@@ -11685,3 +11685,10 @@ body {
 .footer {
   padding: 5rem 0;
 }
+.back_ground
+{
+  width: 700;
+  height: 700;
+  margin: auto;
+  background-image: url("https://media.discordapp.net/attachments/823073129013182504/884053498004639764/KakaoTalk_20210905_213059076_1.png");
+}
